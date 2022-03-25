@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+/*
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+*/
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+.closing_wrap_M div, .closing_wrap_M p, .closing_wrap_M img {max-width: none;}
+
+/* checkbox */
+.closing_wrap_M input[type="checkbox"] {display:none;}
+.closing_wrap_M input[type="checkbox"] + label {color:#424242;}
+.closing_wrap_M input[type="checkbox"] + label span {display:inline-block;width:19px;height:19px;margin:-3px 8px 0 0;vertical-align:middle;background:url(//ff.adteip.net/ground/ads_check_2021.png) left top no-repeat;cursor:pointer; border: none}
+.closing_wrap_M input[type="checkbox"]:checked + label span {background:url(//ff.adteip.net/ground/ads_check_2021.png) -23px top no-repeat;}
+.closing_wrap_M input[type="radio"] {display:none;}
+.closing_wrap_M input[type="radio"] + label {color:#757575;}
+.closing_wrap_M input[type="radio"] + label span {display:inline-block;width:19px;height:19px;margin:-2px 10px 0 0;vertical-align:middle;background:url(//ff.adteip.net/ground/ads_check_2021.png) -38px top no-repeat;cursor:pointer;}
+.closing_wrap_M input[type="radio"]:checked + label span {background:url(//ff.adteip.net/ground/ads_check_2021.png) -57px top no-repeat;}
+
+/* closingad */
+.closing_wrap_M{font-family:'Nanum Gothic','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif; color:#222;}/* 210209 추가 수정 :: 기본글꼴 수정 */
+.closing_wrap_M *{font-family: 'Nanum Gothic','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important; box-sizing:border-box;}/* 210209 추가 수정 :: 기본글꼴 수정 */
+.closing_wrap_M ul,li,form,input{margin:0;padding:0;}
+.closing_wrap_M img{border:0;-webkit-perspective:1; }
+.closing_wrap_M ul{list-style:none; padding:0 8px; overflow: hidden; margin:0 !important;}
+.closing_wrap_M ol{list-style:none; padding:0 8px;}
+.closing_wrap_M a{text-decoration:none; display: block}
+.closing_wrap_M a:hover,a:active,a:focus{text-decoration:none;}
+.closing_wrap_M{position:absolute; top:0; right:0; width:370px; max-width:370px; z-index:120; padding:0;}/* 210209 추가 수정 :: padding 수정 */
+.closing_wrap_M .closing_view_box{background-color:#fff; box-shadow: rgba(50, 50, 50, 0.30) 0 4px 22px 5px;}/* 210209 추가 수정 :: padding 수정 */
+.closing_wrap_M .closing_body{padding:0 0 10px 0}
+.closing_wrap_M .closing_title{position:relative; width:auto;padding:0 17px 10px; background: #222; height: 55px; line-height:16px;}/*210218 추가 수정 :: padding */
+.closing_wrap_M .closing_title .closing_title_text a {text-align: center;font-size: 15px;font-weight: 500; color:#fff; font-family: 'Nanum Gothic','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/* 210209 추가 수정 :: 글꼴 수정 */
+
+.closing_wrap_M .closing_title .closing_title_text{text-align: center; display:inline-block; width:100%; margin: 20px 0 0; }/* 20190423 추가수정 */
+.closing_wrap_M .closing_close{cursor:pointer; float: right; width: 20px; box-sizing:border-box; position: absolute; right:15px; top:17px;}
+.closing_wrap_M .closing_close img{width: 100%}
+.closing_wrap_M .closing_card{display:block; width:340px; margin:15px 15px 0 15px; cursor:pointer;border-radius: 0;overflow: hidden;}
+.closing_wrap_M .closing_card img{width:100%; display: block}
+.closing_wrap_M .closing_products li{display:block; float:left;}
+.closing_wrap_M .closing_products li .product_img{display:block; width:100%; overflow:hidden; background-size:cover; background-position:center center;position: relative}
+.closing_wrap_M .closing_products li .product_img img{width: 100%; display: block;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-ms-transition:.3s;
+	-o-transition:.3s;
+	transition:.3s;}
+.closing_wrap_M .closing_products li:hover .product_img img {
+	-webkit-transform:scale(1.15);
+	-moz-transform:scale(1.15);
+	-ms-transform:scale(1.15);
+	-o-transform:scale(1.15);
+	transform:scale(1.15);
+}
+.closing_wrap_M .closing_products li .product_name{display:block; font-size:14px; color:#222; font-weight:500; padding:7px 0 0 0; margin:0 0 5px 0; white-space: normal; overflow:hidden; line-height: 18px; height: 45px; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; transform:skew(-0.3deg);}/* 210209 추가 수정 :: 폰트사이즈 수정 */
+.closing_wrap_M .closing_products li .product_price{display:inline-block; padding:0 0 0 0; font-size:14px; font-weight:800; color:#232323; transform:skew(-0.3deg); font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/* 210209 추가 수정 :: 글꼴 수정 */
+.closing_wrap_M .closing_products li .product_price .normal_price{display: block; transform:skew(-0.3deg);margin: 0 0 2px 0;color: #999;font-size: 12px;text-decoration: line-through;font-weight: 400; font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/* 210209 추가 수정 :: 글꼴 수정 */
+.closing_wrap_M .closing_products li .adn_list_footer{border-top:1px solid #ededed; padding:6px 0 0 0; margin:6px 0 0 0}
+
+.closing_wrap_M .closing_closetoday{display:block; padding:10px 15px 5px 15px;}
+.closing_wrap_M .closing_closetoday_text{display: inline-block; vertical-align: inherit;cursor: pointer;}
+.closing_wrap_M .closing_form_agree .closing_closetoday_text{vertical-align: middle;margin: -1px 0 0 0; font-size:14px; transform:skew(-0.3deg);}
+.closing_closetoday label div{display: inline-block}
+
+.closing_wrap_M .list_wrap{position:relative; display:inline-block; width:159px; margin:17px 9px 10px !important; padding:0 0 10px 0; background-color:#fff; vertical-align:top; cursor:pointer; transition-duration:0.15s; transition-timing-function:ease-in-out; border-radius: 0; overflow: hidden; box-sizing:border-box;}
+.closing_wrap_M .closing_products li .list_wrap:hover{}
+.closing_wrap_M .block_box{margin: 0 0 8px 0;}
+
+.closing_form{display:block; width:calc(100% - 30px); margin:15px auto 15px; background-color:#fff; box-sizing: border-box; overflow: hidden;}
+.closing_form_title{display:block; width:100%; padding:18px 20px; font-size:18px; font-weight:700; line-height:22px; text-align:center; background-color:#f5484a; color:#fff; margin:0 0 5px 0; font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/* 210209 추가 수정 :: 글꼴 수정 */
+.closing_form_input_wrap{display: inline-block;vertical-align: top;padding: 10px 0 0 12px;}
+.closing_form_input_left{display: inline-block;width: 60px;height: 40px;font-size: 14px; vertical-align:middle; line-height: 40px; transform:skew(-0.3deg);}
+.closing_form_input_right{display:inline-block;}
+.closing_form_input_right input[type="text"]{ width: 255px;height: 40px;padding:0 13px;font-size: 14px;border:none; background:#f3f3f3; transform:skew(-0.3deg); border-radius: 0;}
+.closing_form_input_right input[type="text"]::placeholder {color: #b3b3b3;}
+.closing_form_input_right input[type="text"]:-ms-input-placeholder {color: #b3b3b3;}
+.closing_form_input_right input[type="text"]::-ms-input-placeholder {color: #b3b3b3;}
+
+.closing_form_input_right select:first-child{margin:0 3px 0 0}
+.closing_form_input_right select{width:124px; height: 40px; border:none; background:#f3f3f3; padding:0 10px;  border-radius: 0;}
+
+.closing_form_input_name{width:167px !important;}
+.closing_form_input_right input[type="radio"]{display:none;}
+.closing_form_input_right input[type="radio"] + label{display:inline-block; width:40px; height:40px; background-color:#f3f3f3; vertical-align:top; line-height:40px; text-align:center; border:1px solid #f3f3f3; font-size:14px; color:#999999; cursor:pointer;}
+.closing_form_input_right input[type="radio"]:checked + label{background-color: #ffffff;color: #222;border: 1px solid #232323;}
+.closing_form_btn{display:block; vertical-align:top; min-width:180px; height:45px; margin: 25px auto 15px !important; background-color:#232323; color:#fff; text-align:center; line-height:45px; border:0px solid #000; font-size:17px; cursor:pointer; border-radius: 40px; font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/* 210209 추가 수정 :: 글꼴 수정 */
+.closing_form_agree{position:relative; display:block; width:100%; padding:20px 10px 10px 12px; font-size:14px; line-height: 19px}
+.closing_form_viewbtn{display:inline-block; margin:0 0 0 5px; cursor:pointer; float: right;}
+.closing_form_viewbtn em{font-style: normal; color:#222; margin:0 3px 0 0; font-size:14px; }
+.closing_form_view{display:none; height:100px; margin:10px 0 0 0; padding:12px; overflow:auto; white-space:pre-line; font-size:12px; color:#666; border:1px solid #f3f3f3; background:#f3f3f3; width: 100%;box-sizing: border-box;transform: skew(-0.3deg);}
+
+
+/* title style */
+.closing_title_style1{background-color:#424242; color:#fff;}
+.closing_title_style1 a{color:#fff;}
+.closing_title_style1 .closing_close{color:#ccc; }
+.closing_title_style1 .closing_close:hover{background-color:#666; color:#fff; }
+.closing_title_style2{background-color:#d7d5d7; color:#2f2f2f;}
+.closing_title_style2 a{color:#2f2f2f;}
+.closing_title_style2 .closing_close{color:#7c7c7c; }
+.closing_title_style2 .closing_close:hover{background-color:#acacac; color:#fff; }
+.closing_title_style3{background-color:#b2b2b2; color:#fff;}
+.closing_title_style3 a{color:#fff;}
+.closing_title_style3 .closing_close{color:#eaeaea; }
+.closing_title_style3 .closing_close:hover{background-color:#989898; color:#eaeaea; }
+
+
+.closing_wrap_M .sale_alarm{color: #ed4d4d; font-size: 26px; z-index:1; display: inline-block; float: right; margin:6px 0 0 0;  font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/*210209 추가 수정 :: sale_alarm 경로 및 글꼴 및 margin 수정*/
+.closing_wrap_M .sale_alarm small{font-size: 20px;color:#ed4d4d;  font-family: 'NanumSquare','맑은 고딕','malgun','Malgun Ghothic',"애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo",'돋움','dotum', sans-serif !important}/*210209 추가 수정 :: sale_alarm 경로 및 글꼴 수정*/
+
+.adn_closing_title_bg{position: absolute; top:0; width:100%; height:137px; background:#222; z-index: -1}
+
+/*height 100% 고정일 시*/
+.closing_wrap_M.adn_height_fixed {position: fixed; height:100%; right:0 !important;}
+.closing_wrap_M.adn_height_fixed .closing_body{overflow:auto; height:calc(100% - 55px); overscroll-behavior: contain;}/*210219 추가수정 :: height 수정*/
+
+.adn_title_down {
+	-webkit-transition-duration:0.4s;
+	-webkit-transition-timing-function:ease;
+	transition-duration:0.4s;
+	transition-timing-function:ease;
+}
+
+.closing_body {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.closing_body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+.closing_wrap_M.adn_title_down .closing_title{margin:0 0 15px 0}
+.closing_wrap_M.adn_title_down .closing_title .closing_title_text {margin:18px 0 0}
+.closing_wrap_M.adn_title_down .closing_title .closing_title_text a{font-size:16px}
+.closing_wrap_M.adn_title_down .adn_closing_title_bg{height:51px}
+
+.closing_wrap_M.adn_center_view{
+	position: fixed; left: 50%;top: 50%; height: 690px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.closing_wrap_M.adn_height_fixed.adn_center_view .closing_body{height:615px}
+.closing_wrap_M.adn_height_fixed.adn_center_view.adn_title_down .closing_body{height:calc(100% - 42px)}
+
+.closing_form_viewbtn{margin:0 0 ; font-size: 12px; line-height: 18px}
+.closing_form_viewbtn:after{ content: ''; display:inline-block; vertical-align: middle; width:8px; height:9px;background-image: url("//ff.adteip.net/ground/agree_off_2021.png"); background-size: 100%; background-position: center; background-repeat: no-repeat; margin:0;}
+.closing_form_viewbtn.is_active:after { background-image: url("//ff.adteip.net/ground/agree_on_2021.png"); background-size: 100%; background-position: center; background-repeat: no-repeat}
+.closing_form_view{font-size: 12px; margin:10px 0; line-height: 16px;}
+.closing_form_view a{font-size: 12px; line-height: 18px; display: inline-block}
+.closing_is-hidden { display: none; }
+
+/*회사정보 표기 S*/
+.closing_wrap_M .adn_company_wrap {position: relative;display: inline-block;margin:9px 9px 0 0; float: right}
+.closing_wrap_M .adn_company_wrap .adn_sub_txt {visibility: hidden;text-align: left;width: 203px; right: 15px; color: #222222;padding: 5px 11px;font-size: 12px;position: absolute;z-index: 1; line-height: 16px; background: transparent; border:none;}
+.closing_wrap_M .adn_company_wrap .adn_sub_txt img{display: inline-block; margin:0 3px 0 0; width: 13px; vertical-align: middle}
+.closing_wrap_M .adn_company_wrap .adn_sub_txt a{color: #222; display: inline-block; margin:0;}
+.closing_wrap_M .adn_company_wrap .adn_sub_txt a:hover{color: #222}
+.closing_wrap_M .adn_company_wrap .adn_tooltip_box{padding:0 0 0 10px}
+/*.closing_wrap_M .adn_company_wrap .adn_tooltip_box:hover .adn_sub_txt {visibility: visible;}*/
+.closing_wrap_M .adn_company_wrap .adn_tooltip_box .adn_company_info {display: block;width: 30px;float: right;}
+.closing_wrap_M .adn_company_wrap .adn_tooltip_box .adn_company_info .adn_info_ico {border: 1px solid #d6d6d6; border-radius: 50%; background: #fff; width:23px; height: 23px; text-align: center; line-height: 23px; color:#999999; font-size: 14px; cursor: pointer; float: right; opacity: 0.8}
+
+.closing_wrap_M .adn_company_wrap .adn_tooltip_box:hover .adn_company_info .adn_info_ico{opacity: 1}
+
+.closing_wrap_M.adn_center_view{height: 670px; }
+.closing_wrap_M.adn_center_view .adn_company_wrap{margin:9px 0 0 0}
+.closing_wrap_M.adn_height_fixed .closing_view_box{height: 100%}
+.closing_wrap_M.adn_height_fixed .adn_company_wrap{margin:15px 0 0 0;}
+.closing_wrap_M.adn_height_fixed .adn_company_wrap .adn_sub_txt{/*visibility: inherit;*/ background: transparent; border:none; position: relative; width: auto; right: 0; visibility: unset !important;}
+.closing_wrap_M.adn_height_fixed .adn_company_wrap .adn_sub_txt a{color:#222}
+
+.closing_wrap_M.adn_center_view.adn_height_fixed .adn_company_wrap {margin:15px 0 0 0;}
+.closing_wrap_M.adn_center_view.adn_height_fixed .adn_company_wrap .adn_sub_txt {visibility: inherit;text-align: left;width: auto; right: 0;background-color: transparent;color: #222222;padding: 0 15px 17px 0; font-size: 12px;border: none;position: relative;z-index: 1; line-height: 16px;}
+.closing_wrap_M.adn_center_view.adn_height_fixed .adn_company_wrap .adn_sub_txt a{color:#222}
+/*회사정보 표기 E*/
+
+input[type=submit] {-webkit-appearance:none;}
+.adn_dark_bg{position: fixed !important;}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}
+
+/* IE6,7,9,10 */
+@media screen and (min-width: 640px), screen\9 {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
