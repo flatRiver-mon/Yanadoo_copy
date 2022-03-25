@@ -46,11 +46,22 @@ a{
 .w100-box{
     width: 100%;
 }
+.mar-top-90{
+    margin-top: 90px;
+}
+.main-padding-bottom{
+    padding-bottom: 31.25%;
+}
 /* 스타일 */
 /* menu-warp Start */
 .menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .menu-wrap .logo-box{
     line-height: 88px;
@@ -64,18 +75,24 @@ a{
     font-size: 15px;
 }
 .menu-wrap .menu-box > li:first-child{
+    width: 70px;
     margin-left: 40px;
 }
+.menu-wrap .menu-box > li:nth-child(2){
+    width: 80px;
+}
 .menu-wrap .menu-box > li:nth-child(3){
+    width: 65px;
     margin-left: 70px;
 }
 .menu-wrap .menu-box > li:nth-child(4){
+    width: 110px;
     margin-left: 80px;
 }
 .menu-wrap .menu-box > li:nth-child(5){
     margin-left: 70px;
 }
-.menu-wrap .menu-box > li:hover{
+.menu-wrap .menu-box li a:hover{
     font-weight: bold;
 }
 .menu-wrap .menu-box > li > a{
@@ -92,6 +109,21 @@ a{
     height: 18px;
     position: absolute;
     top:15px;
+}
+.menu-wrap .menu-box > li > ul{
+    position: fixed;
+    display: none;
+}
+.menu-wrap .menu-box > li > ul.active{
+    display: block;
+    z-index: 9;
+}
+.menu-wrap .menu-box > li > ul > li{
+    line-height: 45px;
+    letter-spacing: -1px;
+}
+.menu-wrap .menu-box > li > ul > li:first-child{
+    margin-top: 15px;
 }
 .menu-wrap .user-box{
     line-height: 88px;
@@ -112,5 +144,18 @@ a{
     padding: 9px 18px;
     border-radius: 3px;
     font-size: 14px;
+}
+.menu-wrap > .nav-back-box{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 295px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+    z-index: 8;
+}
+.menu-wrap > .nav-back-box.active{
+    display: block;
 }
 /* menu-wrap End */
