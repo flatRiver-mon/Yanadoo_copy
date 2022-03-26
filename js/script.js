@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+
+
+    // a 태그 클릭시 상단으로 이동하는 기능 블록
+    $("a[href='#']").click(function(e){
+        e.preventDefault();
+    });
+
     // 1차 메뉴에 마우스 올렸을 시 2차 메뉴 표시함
     $(".menu-wrap .menu-box > li").mouseover(function(){
         $(".menu-wrap .menu-box > li > ul").addClass("active");
@@ -32,9 +39,20 @@ $(document).ready(function(){
         $(".main-slider-wrap > .main-slider").slick("slickNext")
     })
 
+    // 서브 슬라이더 속성
     $(".sub-slider").slick({
         slidesToShow:4,
     })
 
+    // 어트랙트 슬라이더 속성
+    $(".attract-slider").slick({
+        arrows : false,
+    })
+
+    // 어트랙트 슬라이더 비포 이벤트 - 움직이기 전 이벤트
+    $(".attract-slider-wrap .attract-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $(".attract-slider-wrap .dots > .dot").removeClass("active")
+        $(".attract-slider-wrap .dots > .dot").eq(nextSlide).addClass("active")
+    });
 
 })
