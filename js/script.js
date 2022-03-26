@@ -41,7 +41,8 @@ $(document).ready(function(){
 
     // 서브 슬라이더 속성
     $(".sub-slider").slick({
-        slidesToShow:4,
+        slidesToShow: 4,
+        arrows : false,
     })
 
     // 어트랙트 슬라이더 속성
@@ -54,5 +55,21 @@ $(document).ready(function(){
         $(".attract-slider-wrap .dots > .dot").removeClass("active")
         $(".attract-slider-wrap .dots > .dot").eq(nextSlide).addClass("active")
     });
+
+    // 큰 썸네일 3개 짜리 슬라이더
+    $(".big-three-slider").slick({
+        slidesToShow:3,
+        slidesToScroll:3,
+    })
+
+    $(".big-three-slider .content").mouseover(function(){
+        let windowWidth = $(window).width();
+        $(this).find(".flight-box").addClass("active")
+        $(this).addClass("active")
+    })
+    $(".big-three-slider .content .flight-box").mouseleave(function(){
+        $(this).removeClass("active")
+        $(this).parents(".content").removeClass("active")
+    })
 
 })
