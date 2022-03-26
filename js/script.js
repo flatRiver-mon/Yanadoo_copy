@@ -32,7 +32,9 @@ $(document).ready(function(){
         $(".main-slider-wrap > .main-slider").slick("slickNext")
     })
 
-    
+    $(".sub-slider").slick({
+        slidesToShow:4,
+    })
 
 
 })

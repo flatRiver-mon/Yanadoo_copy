@@ -59,6 +59,35 @@ a{
 .txt-box > p{
     font-size: 18px;
 }
+.sub-padding-bottom{
+    padding-bottom: 68.1%;
+}
+h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.not-bold{
+    font-weight: normal;
+}
+.label{
+    background-color: #ff5647;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    padding: 7px 9px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.ab-top-10{
+    position: absolute;
+    top: 10px;
+}
+.ab-left-10{
+    position: absolute;
+    left: 10px;
+}
 /* 스타일 */
 
 /* menu-warp Start */
@@ -267,3 +296,27 @@ a{
     right: 30px;
 }
 /* university-box End */
+
+/* sub-slider-wrap Start */
+.sub-slider-wrap > .sub-slider .content{
+    margin-right: 30px;
+}
+.sub-slider-wrap > .sub-slider .content:last-of-type{
+    margin-right: 0;
+}
+.sub-slider-wrap > .sub-slider .content .img-box{
+    border-radius: 5px;
+}
+.sub-slider-wrap > .sub-slider .content .info-box{
+    margin-top: 15px;
+}
+.sub-slider-wrap > .sub-slider .content .info-box > .title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.sub-slider-wrap > .sub-slider .content .info-box > .sale{
+    color: #717188;
+    font-size: 14px;
+}
+
+/* sub-slider-wrap End */
