@@ -52,7 +52,15 @@ a{
 .main-padding-bottom{
     padding-bottom: 31.25%;
 }
+.txt-box > h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.txt-box > p{
+    font-size: 18px;
+}
 /* 스타일 */
+
 /* menu-warp Start */
 .menu-wrap{
     position: fixed;
@@ -209,3 +217,53 @@ a{
     width: 48px;
 }
 /* main-slider End */
+
+/* university-box Start */
+.university-box{
+    background-color: #f7f7fc;
+    padding: 120px 0 100px 0;
+}
+.university-box .link-box-wrap{
+    margin-top: 80px;
+}
+.university-box .link-box-wrap > .link-box{
+    width: calc((100% - 60px) / 3);
+    background-color: #fff;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 16px 0 rgb(0, 0, 0, 0.05);
+}
+.university-box .link-box-wrap > .link-box:last-child{
+    margin-right: 0;
+}
+.university-box .link-box-wrap > .link-box > a{
+    display: block;
+    font-size: 20px;
+    padding: 35px 25px;
+}
+.university-box .float-book{
+    background-image: url("../img/main_section_01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 480px;
+    width: 480px;
+    height: 320px;
+    position: absolute;
+    top:-70px;
+    right: -30px;
+}
+.arrow-btn{
+    width: 40px;
+    height: 40px;
+    background-color: #fded52;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url("../img/btn_arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    transform: rotate(180deg);
+    bottom: 20px;
+    right: 30px;
+}
+/* university-box End */
