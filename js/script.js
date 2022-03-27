@@ -43,6 +43,7 @@ $(document).ready(function(){
     $(".sub-slider").slick({
         slidesToShow: 4,
         arrows : false,
+        variableWidth: true,
     })
 
     // 어트랙트 슬라이더 속성
@@ -60,6 +61,7 @@ $(document).ready(function(){
     $(".big-three-slider").slick({
         slidesToShow:3,
         slidesToScroll:3,
+        variableWidth: true,
     })
 
     $(".big-three-slider .content").mouseover(function(){
@@ -72,4 +74,51 @@ $(document).ready(function(){
         $(this).parents(".content").removeClass("active")
     })
 
+    // 리얼 영어 성장 '스토리' 슬라이더
+    $(".story-slider").slick({
+        slidesToShow:3,
+        arrows:false,
+        infinite:false,
+        speed:200,
+    })
+    
+    // 연속으로 화살표를 누를 시 생기는 버그 방지
+    // 움직이는 동안 1로 만들어서 버튼의 연속 입력을 방지
+    let story_slide_move = 0;
+
+    $(".story-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        story_slide_move = 1;
+        // 슬라이더를 드래그 했을 시 버튼의 반응 추가
+        // 다음 슬라이드를 드래그 했다가 원위치로 돌아와 버리면 nextSlide 값을 조건에 넣지 않을 시
+        // 현재 슬라이드의 위치를 참조하지 않은 상태로 버튼의 액티브가 변경됨
+        // ㄴ 2번째 슬라이드에서 다음 버튼이 액티브가 되는 버그(해결됨)
+        if($(".story-slider-wrap > .btn-box > .left-btn").hasClass("active") && nextSlide == 0){
+            $(".story-slider-wrap > .btn-box > .left-btn").removeClass("active")
+            $(".story-slider-wrap > .btn-box > .right-btn").addClass("active")
+        }else if($(".story-slider-wrap > .btn-box > .right-btn").hasClass("active") && nextSlide == 1){
+            $(".story-slider-wrap > .btn-box > .right-btn").removeClass("active")
+            $(".story-slider-wrap > .btn-box > .left-btn").addClass("active")
+        }
+        console.log(nextSlide)
+    });
+
+    $(".story-slider").on('afterChange', function(event, slick, currentSlide){
+        story_slide_move = 0;
+    });
+
+    
+    $(".story-slider-wrap > .btn-box > .left-btn").click(function(){
+        if($(this).hasClass("active") && story_slide_move == 0){
+            $(".story-slider").slick("slickPrev")
+            $(this).removeClass("active")
+            $(".story-slider-wrap > .btn-box > .right-btn").addClass("active")
+        }
+    })
+    $(".story-slider-wrap > .btn-box > .right-btn").click(function(){
+        if($(this).hasClass("active") && story_slide_move == 0){
+            $(".story-slider").slick("slickNext")
+            $(this).removeClass("active")
+            $(".story-slider-wrap > .btn-box > .left-btn").addClass("active")
+        }
+    })
 })
