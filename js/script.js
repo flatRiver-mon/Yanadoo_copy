@@ -7,13 +7,13 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-    // 1차 메뉴에 마우스 올렸을 시 2차 메뉴 표시함
+    // 메뉴에 마우스 올렸을 시 2차 메뉴 표시함
     $(".menu-wrap .menu-box > li").mouseover(function(){
         $(".menu-wrap .menu-box > li > ul").addClass("active");
         $(".menu-wrap > .nav-back-box").addClass("active");
     })
-    // 2차 메뉴에서 마우스가 나갔을 시 2차 메뉴 표시안함
-    $(".menu-wrap > .nav-back-box").mouseleave(function(){
+    // 메뉴에서 마우스가 나갔을 시 2차 메뉴 표시안함
+    $(".menu-wrap, .menu-wrap > .nav-back-box").mouseleave(function(){
         $(".menu-wrap > .nav-back-box").removeClass("active");
         $(".menu-wrap .menu-box > li > ul").removeClass("active");
     })
@@ -106,7 +106,7 @@ $(document).ready(function(){
         story_slide_move = 0;
     });
 
-    
+
     $(".story-slider-wrap > .btn-box > .left-btn").click(function(){
         if($(this).hasClass("active") && story_slide_move == 0){
             $(".story-slider").slick("slickPrev")
@@ -120,5 +120,11 @@ $(document).ready(function(){
             $(this).removeClass("active")
             $(".story-slider-wrap > .btn-box > .left-btn").addClass("active")
         }
+    })
+
+    $(".event-slider").slick({
+        slidesToShow:2,
+        arrows:false,
+        variableWidth:true,
     })
 })
