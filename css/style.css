@@ -31,8 +31,10 @@ a{
     float: right;
 }
 .con{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .img-box{
     background-size: cover;
@@ -157,9 +159,6 @@ h3{
     position: absolute;
     bottom: 60px;
 }
-.side-padding-30{
-    padding: 0 30px;
-}
 .dots > .dot{
     display: inline-block;
     width: 8px;
@@ -189,8 +188,6 @@ h3{
     left: 0;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-    padding-left: 30px;
-    padding-right: 30px;
     z-index: 999;
 }
 .menu-wrap .logo-box{
@@ -401,10 +398,16 @@ h3{
     display: block;
     content: "";
     width: 100%;
-    height: 282px;
+    height: 280px;
     background-color: #000;
     position: absolute;
     margin-top: 40px;
+}
+.attract-slider .content .attract-image{
+    margin: 0 auto;
+}
+.attract-slider-wrap .dots{
+    right: 20%;
 }
 .attract-slider-wrap .dots > .dot{
     margin: 0 2px;
@@ -564,10 +567,6 @@ h3{
     background-color: #1a1c20;
     margin-bottom: 500px;
 }
-.category-slider-wrap > div{
-    max-width: 1260px;
-    margin: 0 auto;
-}
 .category-slider-wrap .category-box{
     padding-top: 80px;
 }
@@ -602,3 +601,8 @@ h3{
 }
 
 /* category-slider-wrap End */
+
+/* footer Start */
+
+
+/* footer End */
