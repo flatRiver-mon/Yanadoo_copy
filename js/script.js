@@ -122,9 +122,38 @@ $(document).ready(function(){
         }
     })
 
+    // 이벤트 슬라이더 속성
     $(".event-slider").slick({
         slidesToShow:2,
         arrows:false,
         variableWidth:true,
     })
+
+    $(".category-slider").slick({
+        vertical:true,
+        verticalSwiping:true,
+        autoplay:true,
+        autoplaySpeed:4000,
+        speed:1000,
+        arrows:false,
+    })
+
+    $(".category-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $(".category-slider-wrap .category-dots > .category-dot").removeClass("active")
+        $(".category-slider-wrap .category-dots > .category-dot").eq(nextSlide).addClass("active")
+    });
+
+    $(".category-slider-wrap .category-dots > .arrow-btn").click(function(){
+        $(".category-slider").slick("slickNext")
+    })
+
+    $(".category-slider-wrap .category-dots > .category-dot").click(function(){
+        let num = $(this).index()
+        if(num > 4){
+            $(".category-slider").slick("slickGoTo", num-1)
+        }else{
+            $(".category-slider").slick("slickGoTo", num)
+        }
+    })
+
 })

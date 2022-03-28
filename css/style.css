@@ -70,6 +70,9 @@ a{
 .event-padding-bottom{
     padding-bottom: 48%;
 }
+.category-padding-bottom{
+    padding-bottom: 100%;
+}
 .txt-box > h2{
     font-size: 36px;
     margin-bottom: 30px;
@@ -122,6 +125,10 @@ h3{
     position: absolute;
     top: 60px;
 }
+.ab-bottom-20{
+    position: absolute;
+    bottom: 20px;
+}
 .ab-top-25{
     position: absolute;
     top: 25px;
@@ -149,6 +156,9 @@ h3{
 .ab-bottom-60{
     position: absolute;
     bottom: 60px;
+}
+.side-padding-30{
+    padding: 0 30px;
 }
 .dots > .dot{
     display: inline-block;
@@ -344,15 +354,13 @@ h3{
     width: 40px;
     height: 40px;
     background-color: #fded52;
-    position: absolute;
     border-radius: 50%;
     background-image: url("../img/btn_arrow.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 8px;
     transform: rotate(180deg);
-    bottom: 20px;
-    right: 30px;
+    cursor: pointer;
 }
 /* university-box End */
 
@@ -521,6 +529,9 @@ h3{
 /* story-slider-wrap End */
 
 /* event-slider-wrap Start */
+.event-slider-wrap{
+    margin-bottom: 80px;
+}
 .event-slider .slick-track{
     width: 100% !important;
 }
@@ -546,8 +557,48 @@ h3{
 }
 /* event-slider-wrap End */
 
-/* bottom-slider-wrap Start */
+/* category-slider-wrap Start */
 
+.category-slider-wrap{
+    height: 280px;
+    background-color: #1a1c20;
+    margin-bottom: 500px;
+}
+.category-slider-wrap > div{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.category-slider-wrap .category-box{
+    padding-top: 80px;
+}
+.category-slider-wrap .category-box > h4{
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.category-slider-wrap .category-box > .category-dots{
+    font-weight: bold;
+    font-size: 32px;
+    color: #626262;
+    margin-bottom: 10px;
+}
+.category-slider-wrap .category-box > .category-dots > .category-dot{
+    transition: 0.5s;
+}
+.category-slider-wrap .category-box > .category-dots > .category-dot.active{
+    color: #fff;
+}
+.category-slider-wrap .category-box > .category-dots > .arrow-btn{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.category-slider-wrap .category-slider-floater{
+    width: 270px;
+    height: 270px;
+}
+.category-slider .slick-slide{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-
-/* bottom-slider-wrap End */
+/* category-slider-wrap End */
