@@ -675,3 +675,38 @@ h3{
     line-height: 18px;
 }
 /* footer End */
+
+.pc-version{
+    display: block;
+}
+.mo-version{
+    display: none;
+}
+
+/* mobile-version Start */
+/* mo-menu-wrap */
+.mo-menu-wrap{
+    line-height: 54px;
+}
+.mo-menu-box .mo-menu-btn > img{
+    width: 25px;
+}
+.mo-menu-box .mo-logo > img{
+    height: 15px;
+}
+.mo-user-box img{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width:1080px){
+    .pc-version{
+        display: none;
+    }
+    .mo-version{
+        display: block;
+    }
+}
+
+
+/* mobile-version End */

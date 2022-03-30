@@ -7,6 +7,7 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
+    // 메뉴 시작 =====================================================================================
     // 메뉴에 마우스 올렸을 시 2차 메뉴 표시함
     $(".menu-wrap .menu-box > li").mouseover(function(){
         $(".menu-wrap .menu-box > li > ul").addClass("active");
@@ -17,7 +18,9 @@ $(document).ready(function(){
         $(".menu-wrap > .nav-back-box").removeClass("active");
         $(".menu-wrap .menu-box > li > ul").removeClass("active");
     })
+    // 메뉴 끝 =====================================================================================
     
+    // 메인 슬라이더 시작 =====================================================================================
     // 메인 슬라이더 속성
     $(".main-slider-wrap > .main-slider").slick({
         autoplay : true ,
@@ -38,13 +41,16 @@ $(document).ready(function(){
     $(".main-slider-wrap > .btn-box > .btn-next").click(function(){
         $(".main-slider-wrap > .main-slider").slick("slickNext")
     })
+    // 메인 슬라이더 끝 =====================================================================================
 
+    // 서브 슬라이더 시작 =====================================================================================
     // 서브 슬라이더 속성
     $(".sub-slider").slick({
         slidesToShow: 4,
         arrows : false,
         variableWidth: true,
     })
+    // 서브 슬라이더 끝 =====================================================================================
 
     // 어트랙트 슬라이더 속성
     $(".attract-slider").slick({
@@ -99,7 +105,6 @@ $(document).ready(function(){
             $(".story-slider-wrap > .btn-box > .right-btn").removeClass("active")
             $(".story-slider-wrap > .btn-box > .left-btn").addClass("active")
         }
-        console.log(nextSlide)
     });
 
     $(".story-slider").on('afterChange', function(event, slick, currentSlide){
