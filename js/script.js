@@ -161,4 +161,18 @@ $(document).ready(function(){
         }
     })
 
+    $(".mo-menu-box > .mo-menu-btn").click(function(){
+        $(".mo-nav-wrap").addClass("active")
+    })
+    
+    $(".mo-nav-wrap > .mo-background-box").click(function(){
+        $(".mo-nav-wrap").removeClass("active")
+    })
+    
+    $(".mo-nav-wrap > .mo-nav-box > ul > li").click(function(){
+        $(this).siblings().removeClass("active")
+        $(this).addClass("active")
+        $(this).siblings().children("ul").removeClass("active")
+        $(this).children("ul").addClass("active")
+    })
 })

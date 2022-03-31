@@ -48,9 +48,6 @@ a{
 .w100-box{
     width: 100%;
 }
-.mar-top-90{
-    margin-top: 90px;
-}
 .main-padding-bottom{
     padding-bottom: 31.25%;
 }
@@ -287,6 +284,9 @@ h3{
 /* menu-wrap End */
 
 /* main-slider Start */
+.main-slider-wrap{
+    margin-top: 90px;
+}
 .main-slider-wrap > .btn-box > .btn{
     width: 47px;
     height: 47px;
@@ -509,11 +509,13 @@ h3{
 .story-slider-wrap > .btn-box > .btn.active{
     opacity: 1;
 }
-.story-slider .slick-slide{
-    margin-right: 30px;
+.story-slider{
+    margin-left: -15px;
+    margin-right: -15px;
 }
-.story-slider .slick-slide:last-child{
-    margin-right: 0;
+.story-slider .slick-slide{
+    margin-right: 15px;
+    margin-left: 15px;
 }
 .story-slider .content > .img-box{
     border-radius: 5px;
@@ -714,6 +716,10 @@ h3{
     z-index: 1000;
     width: 100%;
     height: 100%;
+    display: none;
+}
+.mo-nav-wrap.active{
+    display: block;
 }
 .mo-nav-wrap > .mo-background-box{
     position: fixed;
@@ -730,7 +736,6 @@ h3{
     right: 7.5%;
     width: 35px;
     height: 35px;
-    opacity: 0.7;
 }
 .mo-nav-wrap > .mo-nav-box{
     position: fixed;
@@ -751,22 +756,40 @@ h3{
     width: 70px;
 }
 .mo-nav-wrap > .mo-nav-box > ul{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .mo-nav-wrap > .mo-nav-box > ul a:hover{
     font-weight: bold;
 }
 .mo-nav-wrap > .mo-nav-box > ul > li > a{
     display: block;
-    padding: 10px 30px;
+    padding: 20px 30px;
     position: relative;
 }
 .mo-nav-wrap > .mo-nav-box > ul > li > a::after{
     content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/mo_nav_dropdown.png");
+    background-size: cover;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li.active > a{
+    font-weight: bold;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li.active > a::after{
+    transform: translateY(-50%) rotate(180deg);
 }
 .mo-nav-wrap > .mo-nav-box > ul > li > ul{
     padding: 10px 40px;
     background-color: #f7f7fc;
+    display: none;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > ul.active{
+    display: block;
 }
 .mo-nav-wrap > .mo-nav-box > ul > li > ul > li{
     font-size: 13px;
@@ -774,11 +797,53 @@ h3{
 }
 .mo-nav-wrap > .mo-nav-box > ul > li > ul > li > a{
     display: block;
-    padding: 10px 0;
+    padding: 9px 0;
 }
-    
-
-
+.mo-nav-wrap > .mo-nav-box .ya-pit::after{
+    content: "";
+    display: block;
+    background-image: url("../img/nav_yapit.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    top: 6px;
+    left: 30px;
+}
+.mo-nav-wrap > .mo-nav-box > .btn-box{
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.mo-nav-wrap > .mo-nav-box > .btn-box > .join-btn > a{
+    display: block;
+    border:1px solid #cfcfda;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+.mo-nav-wrap > .mo-nav-box > .btn-box > .login-btn > a{
+    display: block;
+    border:1px solid #fded52;
+    background-color: #fded52;
+    padding: 15px 0;
+}
+.mo-nav-wrap > .mo-nav-box > .app-download{
+    padding-left: 20px;
+    margin-top: 70px;
+}
+.mo-nav-wrap > .mo-nav-box > .app-download > p{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.mo-nav-wrap > .mo-nav-box > .app-download > a{
+    margin-right: 20px;
+}
+.mo-nav-wrap > .mo-nav-box > .app-download > a > img{
+    width: 50px;
+    height: 50px;
+}
 /* mo-nav-wrap End */
 
 
