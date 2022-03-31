@@ -742,7 +742,41 @@ h3{
     box-sizing: border-box;
     overflow-y: scroll;
     z-index: 1001;
+    padding-top: 40px;
 }
+.mo-nav-wrap > .mo-nav-box .logo{
+    margin-left: 20px;
+}
+.mo-nav-wrap > .mo-nav-box .logo > img{
+    width: 70px;
+}
+.mo-nav-wrap > .mo-nav-box > ul{
+    margin-top: 40px;
+}
+.mo-nav-wrap > .mo-nav-box > ul a:hover{
+    font-weight: bold;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > a{
+    display: block;
+    padding: 10px 30px;
+    position: relative;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > a::after{
+    content: "";
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > ul{
+    padding: 10px 40px;
+    background-color: #f7f7fc;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > ul > li{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.mo-nav-wrap > .mo-nav-box > ul > li > ul > li > a{
+    display: block;
+    padding: 10px 0;
+}
+    
 
 
 /* mo-nav-wrap End */
