@@ -848,8 +848,8 @@ h3{
         display: block;
     }
     .con{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .main-slider-wrap{
         margin-top: 54px;
@@ -886,6 +886,7 @@ h3{
     .university-box .link-box-wrap > .link-box{
         width: calc((100% - 30px) / 3);
         margin-right: 10px;
+        border-radius: 4px;
     }
     .university-box .link-box-wrap > .link-box > a{
         font-size: 12px;
@@ -906,6 +907,9 @@ h3{
     .sub-slider-wrap > .sub-slider{
         margin-left: -4px;
         margin-right: -4px;
+    }
+    .sub-slider-wrap > .sub-slider .slick-list{
+        padding-left: 0px !important;
     }
     .sub-slider-wrap > .sub-slider .slick-slide{
         margin-left: 4px;
@@ -958,6 +962,33 @@ h3{
     }
     .attract-slider-wrap .dots > .dot.active{
         width: 24px;
+    }
+    .big-three-slider-wrap > .big-three-slider{
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    .big-three-slider-wrap > .big-three-slider .slick-list{
+        padding-left: 0;
+        margin-left: -50px;
+    }
+    .big-three-slider-wrap > .big-three-slider .slick-track{
+        padding-top: 0;
+        margin-left: 0;
+    }
+    .big-three-slider-wrap > .big-three-slider .content{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .big-three-slider-wrap > .big-three-slider .content .img-box{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .big-three-slider-wrap > .big-three-slider .content .txt-box{
+        padding: 20px 40px 20px 20px;
+        color: #fff;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .big-three-slider-wrap > .big-three-slider .content .txt-box > .type{
+        margin-bottom: 5px;
     }
 }
 

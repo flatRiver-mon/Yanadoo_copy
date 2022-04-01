@@ -53,7 +53,6 @@ $(document).ready(function(){
             breakpoint: 1080,
             settings: {
                 slidesToShow:2,
-
             }
         }]
     })
@@ -73,17 +72,30 @@ $(document).ready(function(){
     // 큰 썸네일 3개 짜리 슬라이더
     $(".big-three-slider").slick({
         slidesToShow:3,
-        slidesToScroll:3,
+        slidesToScroll:1,
+        infinite:false,
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToShow:1.13,
+                centerMode: true,
+            }
+        }]
     })
 
     $(".big-three-slider .content").mouseover(function(){
         let windowWidth = $(window).width();
-        $(this).find(".flight-box").addClass("active")
-        $(this).addClass("active")
+        if(windowWidth > 1080){
+            $(this).find(".flight-box").addClass("active")
+            $(this).addClass("active")
+        }
     })
     $(".big-three-slider .content .flight-box").mouseleave(function(){
-        $(this).removeClass("active")
-        $(this).parents(".content").removeClass("active")
+        let windowWidth = $(window).width();
+        if(windowWidth > 1080){
+            $(this).removeClass("active")
+            $(this).parents(".content").removeClass("active")
+        }
     })
 
     // 리얼 영어 성장 '스토리' 슬라이더
