@@ -54,9 +54,6 @@ a{
 .sub-padding-bottom{
     padding-bottom: 68.1%;
 }
-.attract-padding-bottom{
-    padding-bottom: 26.8%;
-}
 .big-three-padding-bottom{
     padding-bottom: 100%;
 }
@@ -940,6 +937,12 @@ h3{
     }
     .ab-left-10{
         left: 6px;
+    }
+    .attract-slider-wrap{
+        margin-top: 40px;
+    }
+    .attract-padding-bottom{
+
     }
 }
 
