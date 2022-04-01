@@ -907,9 +907,6 @@ h3{
         margin-left: -4px;
         margin-right: -4px;
     }
-    .sub-slider-wrap > .sub-slider > .slick-list{
-        overflow: visible;
-    }
     .sub-slider-wrap > .sub-slider .slick-slide{
         margin-left: 4px;
         margin-right: 4px;
@@ -942,7 +939,25 @@ h3{
         margin-top: 40px;
     }
     .attract-padding-bottom{
-
+        padding-bottom: 74.6%;
+    }
+    .attract-slider-wrap::before{
+        display: none;
+    }
+    .attract-slider .content .attract-image.pc-version{
+        display: none;
+    }
+    .attract-slider-wrap .dots{
+        left: 20px;
+        top: auto;
+        bottom: 20px;
+    }
+    .attract-slider-wrap .dots > .dot{
+        width: 6px;
+        height: 6px;
+    }
+    .attract-slider-wrap .dots > .dot.active{
+        width: 24px;
     }
 }
 
