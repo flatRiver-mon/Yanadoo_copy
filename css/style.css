@@ -906,6 +906,41 @@ h3{
         margin-top: 55px;
         margin-bottom: 20px;
     }
+    .sub-slider-wrap > .sub-slider{
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .sub-slider-wrap > .sub-slider > .slick-list{
+        overflow: visible;
+    }
+    .sub-slider-wrap > .sub-slider .slick-slide{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .sub-slider-wrap > .sub-slider .content .img-box{
+        border-radius: 2px;
+    }
+    .sub-slider-wrap > .sub-slider .content .info-box{
+        margin-top: 5px;
+    }
+    .sub-slider-wrap > .sub-slider .content .info-box > .title{
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .sub-slider-wrap > .sub-slider .content .info-box > .sub-text{
+        font-size: 12px;
+    }
+    .label{
+        font-size: 10px;
+        padding: 3px 4px;
+        border-radius: 1px;
+    }
+    .ab-top-10{
+        top: 6px;
+    }
+    .ab-left-10{
+        left: 6px;
+    }
 }
 
 

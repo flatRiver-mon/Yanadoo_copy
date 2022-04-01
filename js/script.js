@@ -48,6 +48,7 @@ $(document).ready(function(){
     $(".sub-slider").slick({
         slidesToShow: 4,
         arrows: false,
+        infinite:false,
         responsive: [{
             breakpoint: 1080,
             settings: {
