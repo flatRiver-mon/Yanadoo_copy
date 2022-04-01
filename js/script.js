@@ -47,8 +47,14 @@ $(document).ready(function(){
     // 서브 슬라이더 속성
     $(".sub-slider").slick({
         slidesToShow: 4,
-        arrows : false,
-        variableWidth: true,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToShow:2,
+
+            }
+        }]
     })
     // 서브 슬라이더 끝 =====================================================================================
 
@@ -67,7 +73,6 @@ $(document).ready(function(){
     $(".big-three-slider").slick({
         slidesToShow:3,
         slidesToScroll:3,
-        variableWidth: true,
     })
 
     $(".big-three-slider .content").mouseover(function(){
@@ -131,7 +136,6 @@ $(document).ready(function(){
     $(".event-slider").slick({
         slidesToShow:2,
         arrows:false,
-        variableWidth:true,
     })
 
     $(".category-slider").slick({
