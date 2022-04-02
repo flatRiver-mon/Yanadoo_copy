@@ -1044,6 +1044,44 @@ h3{
         font-size: 12px;
         margin-top: 5px;
     }
+    .category-padding-bottom{
+        padding-bottom: 100%;
+    }
+    .category-slider-wrap{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .category-slider-wrap .category-box{
+        padding-top: 40px;
+        float: none;
+    }
+    .category-slider-wrap .category-box > h4{
+        margin-bottom: 30px;
+    }
+    .category-slider-wrap .category-box > .category-dots{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .category-slider-wrap .category-box > .category-dots > .arrow-btn{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .category-slider-wrap .category-slider-floater{
+        float: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+    }
+    .category-slider .slick-track{
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .category-slider .slick-slide{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
 }
 
 

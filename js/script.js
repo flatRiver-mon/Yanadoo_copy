@@ -171,6 +171,23 @@ $(document).ready(function(){
         autoplaySpeed:4000,
         speed:1000,
         arrows:false,
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                vertical:false,
+                verticalSwiping:false,
+                centerMode:true,
+                centerPadding:"33.3%",
+            }
+        },{
+            breakpoint: 800,
+            settings: {
+                vertical:false,
+                verticalSwiping:false,
+                centerMode:true,
+                centerPadding:"20%",
+            }
+        }]
     })
 
     $(".category-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
