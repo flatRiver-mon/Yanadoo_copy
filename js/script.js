@@ -73,6 +73,7 @@ $(document).ready(function(){
     $(".big-three-slider").slick({
         slidesToShow:3,
         slidesToScroll:1,
+        arrows:false,
         infinite:false,
         responsive: [{
             breakpoint: 1080,
