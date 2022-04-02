@@ -104,6 +104,12 @@ $(document).ready(function(){
         arrows:false,
         infinite:false,
         speed:200,
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToShow:1.05,
+            }
+        }]
     })
     
     // 연속으로 화살표를 누를 시 생기는 버그 방지
@@ -149,6 +155,13 @@ $(document).ready(function(){
     $(".event-slider").slick({
         slidesToShow:2,
         arrows:false,
+        infinite:false,
+        responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToShow:1.05,
+            }
+        }]
     })
 
     $(".category-slider").slick({
