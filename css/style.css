@@ -1058,7 +1058,12 @@ h3{
         height: auto;
         padding-bottom: 40px;
     }
+    .category-slider-wrap > .con{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .category-slider-wrap .category-box{
+        padding-left: 20px;
         padding-top: 40px;
         float: none;
     }
